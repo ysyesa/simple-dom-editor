@@ -4,8 +4,13 @@
   "version": "0.1",
   "manifest_version": 3,
   "content_scripts": [{
-    "matches": ["https://www.propertyguru.com.sg/new-project-launch*"],
-    "js": ["utils.js", "views.js", "storage.js", "main.js"]
+    "matches": ["https://agentnet.propertyguru.com.sg/*"],
+    "js": [
+      "developer_listing.js", 
+      "developer_listing_tab_1.js", "developer_listing_tab_2.js", "developer_listing_tab_3.js",
+      "developer_listing_tab_2_make_offer.js", "developer_listing_tab_3_completed.js",
+      "main.js"
+    ]
   }],
   "permissions": ["storage", "activeTab", "scripting"],
   "icons": {
