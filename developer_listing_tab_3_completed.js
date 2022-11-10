@@ -1,7 +1,7 @@
 function comm_viewInitDeveloperListingTab3Completed() {
   // Modifying title and description
   var elem = document.getElementsByClassName("MuiTypography-root jss30 MuiTypography-h3")[0];
-  elem.textContent = "Agent Referral Portal";
+  elem.textContent = "Project Referrral";
   var elem = document.getElementsByClassName("MuiTypography-root jss30 MuiTypography-body1")[0];
   elem.textContent = "Help developers get qualified leads and get paid!";
 
@@ -16,7 +16,7 @@ function comm_viewInitDeveloperListingTab3Completed() {
   elem.childNodes[0].addEventListener("click", function() {
     window.location.href = "https://agentnet.propertyguru.com.sg/featured-agent-booking?tab=1"
   })
-  elem.childNodes[1].textContent = "Projects for Referral"
+  elem.childNodes[1].textContent = "Referral Invitation"
   elem.childNodes[1].classList.remove("active");
   elem.childNodes[1].addEventListener("click", function() {
     window.location.href = "https://agentnet.propertyguru.com.sg/featured-agent-booking?tab=2"
@@ -55,6 +55,22 @@ function renderTab3Completed() {
     '<div>' +
       '<ul style="margin-top:15px; margin-left:50px; font-size: 15px;" class="listing-property-type">' +
         '<li><span>Completed</span></li>' +
+      '</ul>' +
+    '</div>' +
+  '</div>';
+  newParent.appendChild(elem);
+
+  var elem = document.createElement("div");
+  elem.innerHTML = '<div class="card" style="margin-top:20px; display: flex; border-radius: 10px; width: 75%; height: 175px; background-color: white;">' +
+    '<img style="height: 100%; border-radius: 10px;" src="https://sg2-cdn.pgimgs.com/listing/24165712/UPHO.137949511.V800/Sentosa-Cove-Harbourfront-Telok-Blangah-Singapore.jpg">' + 
+    '<div style="padding-left:20px;" class="card-body">' + 
+      '<h5 style="margin-top:10px; font-size: 20px;" class="card-title">Sentosa Cove</h5>' +
+      '<p style="font-size: 15px;" class="card-text">Cove Drive</p>' +
+      '<p style="font-size: 15px; font-weight: bold;" class="card-text">S$17,000,000</p>' +
+    '</div>' +
+    '<div>' +
+      '<ul style="margin-top:15px; margin-left:50px; font-size: 15px;" class="listing-property-type">' +
+        '<li style="background: red;"><span>Rejected</span></li>' +
       '</ul>' +
     '</div>' +
   '</div>';

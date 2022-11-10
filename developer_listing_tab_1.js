@@ -1,7 +1,7 @@
 function comm_viewInitDeveloperListingTab1() {
   // Modifying title and description
   var elem = document.getElementsByClassName("MuiTypography-root jss30 MuiTypography-h3")[0];
-  elem.textContent = "Agent Referral Portal";
+  elem.textContent = "Project Referrral";
   var elem = document.getElementsByClassName("MuiTypography-root jss30 MuiTypography-body1")[0];
   elem.textContent = "Help developers get qualified leads and get paid!";
 
@@ -16,7 +16,7 @@ function comm_viewInitDeveloperListingTab1() {
   elem.childNodes[0].addEventListener("click", function() {
     window.location.href = "https://agentnet.propertyguru.com.sg/featured-agent-booking?tab=1"
   })
-  elem.childNodes[1].textContent = "Projects for Referral"
+  elem.childNodes[1].textContent = "Referral Invitation"
   elem.childNodes[1].classList.remove("active");
   elem.childNodes[1].addEventListener("click", function() {
     window.location.href = "https://agentnet.propertyguru.com.sg/featured-agent-booking?tab=2"

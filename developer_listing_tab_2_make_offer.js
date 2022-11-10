@@ -1,7 +1,7 @@
 function comm_viewInitDeveloperListingTab2MakeOffer() {
   // Modifying title and description
   var elem = document.getElementsByClassName("MuiTypography-root jss30 MuiTypography-h3")[0];
-  elem.textContent = "Agent Referral Portal";
+  elem.textContent = "Project Referrral";
   var elem = document.getElementsByClassName("MuiTypography-root jss30 MuiTypography-body1")[0];
   elem.textContent = "Help developers get qualified leads and get paid!";
 
@@ -35,7 +35,7 @@ function renderTab2MakeOffer() {
     '<p style="font-size: 15px;" class="card-text">4 mins (330 m) to BP8 Pending LRT</p>' + 
     '<p style="font-size: 15px;" class="card-text"><a href="https://agentnet.propertyguru.com.sg/fastkey">Check on FastKey for more details.</a></p>' +
     '<hr>' +
-    '<p style="font-size: 20px;" class="card-text">Please select the unit you want to sell</p>' + 
+    '<p style="font-size: 20px;" class="card-text">Select Cashew Green unit types to sign up for referral program</p>' + 
     '<div style="display: flex">' +
       '<div class="card" style="margin-top:20px; display: flex; border-radius: 10px; width: 40%; height: 175px; background-color: white;">' +
         '<img style="height: 100%; border-radius: 10px;" src="https://sg2-cdn.pgimgs.com/listing/24023833/UPHO.135614913.R400X300/Cashew-Green-Dairy-Farm-Bukit-Panjang-Choa-Chu-Kang-Singapore.jpg">' +

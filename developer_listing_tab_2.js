@@ -1,7 +1,7 @@
 function comm_viewInitDeveloperListingTab2() {
   // Modifying title and description
   var elem = document.getElementsByClassName("MuiTypography-root jss30 MuiTypography-h3")[0];
-  elem.textContent = "Agent Referral Portal";
+  elem.textContent = "Project Referrral";
   var elem = document.getElementsByClassName("MuiTypography-root jss30 MuiTypography-body1")[0];
   elem.textContent = "Help developers get qualified leads and get paid!";
 
@@ -16,7 +16,7 @@ function comm_viewInitDeveloperListingTab2() {
   elem.childNodes[0].addEventListener("click", function() {
     window.location.href = "https://agentnet.propertyguru.com.sg/featured-agent-booking?tab=1"
   })
-  elem.childNodes[1].textContent = "Projects for Referral"
+  elem.childNodes[1].textContent = "Referral Invitation"
   elem.childNodes[1].classList.add("active");
   elem.childNodes[1].addEventListener("click", function() {
     window.location.href = "https://agentnet.propertyguru.com.sg/featured-agent-booking?tab=2"
@@ -57,7 +57,8 @@ function renderTab2() {
       '<div>' +
         '<ul style="margin-top:15px; font-size: 20px;" class="listing-property-type">' +
           '<li><span>2% Commission</span></li>' +
-        '</ul>' +
+        '</ul><br><br>' +
+        '<button><a style="font-size:15px;" href="https://agentnet.propertyguru.com.sg/featured-agent-booking?tab=2&offer=true">Join Referral Program</a></button>' +
       '</div>' +
     '</div>';
   newParent.appendChild(elem);
@@ -75,11 +76,9 @@ function renderTab2() {
       '<div>' +
         '<ul style="margin-top:15px; font-size: 20px;" class="listing-property-type">' +
           '<li><span>up to 3% Commission</span></li>' +
-        '</ul>' +
+        '</ul><br><br>' +
+      '<button><a style="font-size:15px;" href="https://agentnet.propertyguru.com.sg/featured-agent-booking?tab=2&offer=true">Join Referral Program</a></button>' +
       '</div>' +
-    '</div>';
-  elem.addEventListener("click", function() {
-    window.location.href = "https://agentnet.propertyguru.com.sg/featured-agent-booking?tab=2&offer=true"
-  })
+     '</div>';
   newParent.appendChild(elem);
 }
