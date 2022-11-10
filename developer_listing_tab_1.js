@@ -1,7 +1,7 @@
 function comm_viewInitDeveloperListingTab1() {
   // Modifying title and description
   var elem = document.getElementsByClassName("MuiTypography-root jss30 MuiTypography-h3")[0];
-  elem.textContent = "Project Referrral";
+  elem.textContent = "Project Referral";
   var elem = document.getElementsByClassName("MuiTypography-root jss30 MuiTypography-body1")[0];
   elem.textContent = "Help developers get qualified leads and get paid!";
 
